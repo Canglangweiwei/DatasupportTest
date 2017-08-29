@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DatasupportTest</string>
+    <string name="txt_sel">查询</string>
+    <string name="txt_upt">更新</string>
+    <string name="txt_del">删除</string>
+    <string name="txt_add">新增</string>
+    <string name="txt_show">显示</string>
+</resources>

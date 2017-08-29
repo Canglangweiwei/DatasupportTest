@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!-- 数据库名称 -->
+    <dbname value="geecity" />
+    <!-- 数据库版本 -->
+    <version value="1" />
+    <!-- 数据库对应实体类 -->
+    <list>
+        <mapping class="com.geecity.jucheng.datasupport.bean.Phone" />
+    </list>
+</litepal>

@@ -38,7 +38,7 @@ public class MainNet {
         List<Pictures> al = new ArrayList<>();
         try {
             Document document = Jsoup.connect(path).get();
-            Log.d("document" , document.data());
+            Log.d("document" , document.html());
             Elements elements = document.select("ul.pic2").select(".vvi").select(".fix");
             for (int k = 0; k < elements.size(); k++) {
                 Elements eImg;

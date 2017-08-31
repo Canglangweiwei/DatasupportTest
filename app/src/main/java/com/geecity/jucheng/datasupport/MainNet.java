@@ -2,6 +2,7 @@ package com.geecity.jucheng.datasupport;
 
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
 import com.geecity.jucheng.datasupport.bean.Pictures;
 
@@ -34,11 +35,11 @@ public class MainNet {
 
     public void getPhoto(Handler mHandler, String path) {
 
-        Document dc = null;
         List<Pictures> al = new ArrayList<>();
         try {
-            dc = Jsoup.connect(path).get();
-            Elements elements = dc.select("ul.pic2").select(".vvi").select(".fix");
+            Document document = Jsoup.connect(path).get();
+            Log.d("document" , document.data());
+            Elements elements = document.select("ul.pic2").select(".vvi").select(".fix");
             for (int k = 0; k < elements.size(); k++) {
                 Elements eImg;
                 eImg = elements.get(k).select("img[src]");

@@ -57,6 +57,8 @@ public interface GridPageable {
 
     RecyclerView.LayoutManager getLayoutManager();
 
+    RecyclerView.ItemDecoration getItemDecoration();
+
     GridLayoutManager getGridLayoutManager();
 
     /**

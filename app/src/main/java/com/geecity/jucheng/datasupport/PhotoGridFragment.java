@@ -21,6 +21,12 @@ public class PhotoGridFragment extends GridPagingFragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        setRefreshEnable(true, false);
+    }
+
+    @Override
     public void loadData(int pageIndex) {
         MainNet mainNet = new MainNet(mHandler, "http://www.jj20.com/bz/nxxz");
         mainNet.netStart();
